@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pracday4/pages/bar.dart';
+import 'package:pracday4/pages/login.dart';
 
 void main() {
   runApp(MyApp());
@@ -21,9 +22,14 @@ class _MyAppState extends State<MyApp> {
       ),
       themeMode: ThemeMode.dark,
       darkTheme: ThemeData(
-        brightness: Brightness.dark
+        brightness: Brightness.dark,
       ),
-      home: bar(),
+      initialRoute: "/home",
+      routes: {
+        "/": (context) => bar(),
+        "/home" : (context) => login(),
+      } ,
+      //home: bar(),
     );
   }
 }
