@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:pracday4/Utill/routies.dart';
 //import 'package:pracday4/pages/App.dart';
 //import 'package:pracday4/pages/bar.dart';
 // ignore: camel_case_types
@@ -58,7 +59,9 @@ class _loginState extends State<login> {
               
             ),
             SizedBox(height: 10,),
-            ElevatedButton(onPressed: (){}, child:Title(color: Colors.amber,
+            ElevatedButton(onPressed: (){
+              Navigator.pushNamed(context, MyRoutes.homeRoute);
+            }, child:Title(color: Colors.amber,
              child: Text("Login")) )
                ],
                

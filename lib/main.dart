@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:pracday4/Utill/routies.dart';
 import 'package:pracday4/pages/bar.dart';
 import 'package:pracday4/pages/login.dart';
 
@@ -26,8 +27,8 @@ class _MyAppState extends State<MyApp> {
       ),
       initialRoute: "/home",
       routes: {
-        "/": (context) => bar(),
-        "/home" : (context) => login(),
+        MyRoutes.homeRoute: (context) => bar(),
+        MyRoutes.loginRoute : (context) => login(),
       } ,
       //home: bar(),
     );
