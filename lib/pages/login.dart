@@ -17,7 +17,7 @@ class _loginState extends State<login> {
     return SafeArea(
       child: Scaffold(
         appBar: AppBar(
-          title: Text("LogIn"),
+          title: Text("Login"),
           
         ),
         drawer: Drawer(),
